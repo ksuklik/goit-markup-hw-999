@@ -208,6 +208,36 @@ fill:var(--accent-color);
   color: var(--accent-new-color);
   background-color: var(--accent-color);
 }
+ /* modal */
+
+ .backdrop{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 1600px;
+   height: 1024px;
+   background: rgba(0, 0, 0, 0.2);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ .backdrop.is-hidden{
+   opacity: 0;
+   pointer-events: none;
+ }
+
+ .modal{
+   min-width: 528px;
+   min-height: 581px;
+   background: #FFFFFF;
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 221px, 536px;
+
+
+ }
 
 /* Организхационные моменты */
 
