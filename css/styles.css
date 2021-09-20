@@ -226,17 +226,16 @@ fill:var(--accent-color);
  }
 
  .modal{
+   position: absolute;
+   top: 50%;
+   left: 50%;
    min-width: 528px;
    min-height: 581px;
    background: #FFFFFF;
 
-   position: absolute;
-   top: 50%;
-   left: 50%;
+
    transform: translate(-50%, -50%);
    padding: 221px, 536px;
-
-
  }
 
 /* Организхационные моменты */
@@ -308,9 +307,33 @@ fill:var(--accent-color);
 }
 
 .work-img{
+  display: block;
+  position: relative;
   margin-right: 30px;
 }
 
+.work-owerlay{
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  padding: 27px 0px;
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.name-owerlay{
+  
+
+font-style: normal;
+ font-weight: bold;
+ font-size: 14px;
+ line-height: 1.14;
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+
+ color: #FFFFFF;
+}
 .work-img:last-child{
   margin-right: 0;
 }
